@@ -1,0 +1,10 @@
+# Private or runtime files - keep them off GitHub
+/error_log
+*.zip
+*.sql
+/_tl_preview/
+
+# Customer, maker and branch photos uploaded through the app (folders are kept)
+/assets/uploads/**/*
+!/assets/uploads/**/
+!/assets/uploads/**/.gitkeep
