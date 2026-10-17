@@ -99,7 +99,7 @@
                         </a>
                     </div>
                     <div class="col-xl-6 col-md-4 col-6">
-                        <a href="{{ route('branch.supplier.view') }}" class="tl-stat tl-accent-brick">
+                        <a href="{{ route('branch.supplier.view') }}" class="tl-stat tl-stat-compact tl-accent-brick">
                             <span class="tl-stat-icon"><i class="fas fa-truck"></i></span>
                             <span>
                                 <span class="tl-stat-label d-block">Suppliers</span>
@@ -108,7 +108,7 @@
                         </a>
                     </div>
                     <div class="col-xl-6 col-md-4 col-6">
-                        <a href="{{ route('branch.user.user-list') }}" class="tl-stat tl-accent-navy">
+                        <a href="{{ route('branch.user.user-list') }}" class="tl-stat tl-stat-compact tl-accent-navy">
                             <span class="tl-stat-icon"><i class="fas fa-users-cog"></i></span>
                             <span>
                                 <span class="tl-stat-label d-block">Staff</span>

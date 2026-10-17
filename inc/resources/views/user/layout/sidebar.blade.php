@@ -1,12 +1,12 @@
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
+<aside class="tl-sidebar">
     @include('layouts.tailor_brand', ['tl_home' => route('user.dashboard')])
       @php
           $user_info = App\Models\IglTailorUserUser::where('its_user_login_id',Auth::User()->its_slno)->first();
           $permission_status = explode(',',$user_info->its_user_permission_status);
       @endphp
     <!-- Sidebar -->
-    <div class="sidebar">
-      <div class="user-panel tl-user-card d-flex">
+    <div class="tl-sidebar-body">
+      <div class="tl-user-card">
         <div class="image">
             @if (empty(Auth::user()->UserDetails->its_user_pic))
             <img src="{{ asset('assets/dist/img/avatar04.png') }}" class="img-circle" alt="User Image" onerror="this.onerror=null;this.src='{{ asset('assets/dist/img/avatar04.png') }}'">
@@ -37,8 +37,8 @@
       </div>
       @endif
       <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+      <nav class="tl-nav">
+        <ul class="tl-menu" role="menu">
           <!-- Add icons to the links using the .nav-icon class  -->
                
           <li class="nav-item has-treeview @yield('dashboard')">

@@ -9,21 +9,21 @@
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome-free/css/all.min.css') }}">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="{{ asset('assets/dist/css/adminlte.min.css') }}">
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="{{ asset('assets/dist/css/bootstrap.min.css') }}">
   <!-- Fonts + tailoring theme -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ asset('assets/dist/css/tailor-theme.css') }}?v=1.3">
+  <link rel="stylesheet" href="{{ asset('assets/dist/css/tailor-theme.css') }}?v=2.2">
 </head>
-<body class="hold-transition">
+<body>
 <div class="tl-login">
 
   {{-- Brand panel --}}
   <div class="tl-login-art">
     <i class="fas fa-cut tl-login-bg-icon"></i>
     <div class="tl-login-brand">
-      <span class="tl-brand-mark"><i class="fas fa-cut"></i></span>
+      <span class="tl-brand-label"><img src="{{ asset('assets/dist/img/logo_text.png') }}" alt="IGL Web Ltd" class="tl-brand-logo"></span>
       <span>
         <strong>IGL Tailor</strong>
         <small>Bespoke Suite</small>
@@ -48,11 +48,7 @@
   <div class="tl-login-panel">
     <div class="tl-login-card">
       <div class="tl-login-mobile-brand tl-login-brand">
-        <span class="tl-brand-mark"><i class="fas fa-cut"></i></span>
-        <span>
-          <strong>IGL Tailor</strong>
-          <small>Bespoke Suite</small>
-        </span>
+        <span class="tl-brand-label"><img src="{{ asset('assets/dist/img/logo_text.png') }}" alt="IGL Web Ltd" class="tl-brand-logo"></span>
       </div>
 
       <h2>Welcome back</h2>
@@ -93,8 +89,6 @@
 <script src="{{ asset('assets/plugins/jquery/jquery.min.js') }}"></script>
 <!-- Bootstrap 4 -->
 <script src="{{ asset('assets/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-<!-- AdminLTE App -->
-<script src="{{ asset('assets/dist/js/adminlte.min.js') }}"></script>
 
 </body>
 </html>

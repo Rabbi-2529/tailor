@@ -1,8 +1,8 @@
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
+<aside class="tl-sidebar">
     @include('layouts.tailor_brand', ['tl_home' => route('admin.dash')])
 
-    <div class="sidebar">
-      <div class="user-panel tl-user-card d-flex">
+    <div class="tl-sidebar-body">
+      <div class="tl-user-card">
         <div class="image">
           <img src="{{ asset('assets/dist/img/avatar5.png')}}" class="img-circle" alt="User Image">
         </div>
@@ -12,8 +12,8 @@
         </div>
       </div>
 
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+      <nav class="tl-nav">
+        <ul class="tl-menu" role="menu">
           <li class="nav-item has-treeview @yield('dashboard')">
             <a href="{{ route('admin.dash') }}" class="nav-link @yield('dashboard_link')">
               <i class="nav-icon fas fa-th-large"></i>
